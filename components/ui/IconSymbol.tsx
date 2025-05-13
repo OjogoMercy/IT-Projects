@@ -15,10 +15,13 @@ type IconSymbolName = keyof typeof MAPPING;
  */
 const MAPPING = {
   'house.fill': 'home',
-  'paperplane.fill': 'send',
+  'paperplane.fill': 'insert-chart-outlined',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
-} as IconMapping;
+  'person-outline.fill': 'person-outline',
+  'forward.fill': 'forward-to-inbox',
+} as unknown as IconMapping;
+
 
 /**
  * An icon component that uses native SF Symbols on iOS, and Material Icons on Android and web.
@@ -27,7 +30,7 @@ const MAPPING = {
  */
 export function IconSymbol({
   name,
-  size = 24,
+  size = 20,
   color,
   style,
 }: {
@@ -37,5 +40,5 @@ export function IconSymbol({
   style?: StyleProp<TextStyle>;
   weight?: SymbolWeight;
 }) {
-  return <MaterialIcons color={color} size={size} name={MAPPING[name]} style={style} />;
+  return <MaterialIcons color={'#aaa'} size={size} name={MAPPING[name]} style={style} />;
 }
