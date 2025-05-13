@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, FlatList, Pressable, TouchableOpacity } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, Image, FlatList, Pressable, TouchableOpacity ,StatusBar} from 'react-native';
 import React from 'react';
 import styles from '@/constants/Styles';
 import images from '@/constants/images';
@@ -25,6 +25,7 @@ const Profile = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar backgroundColor={'transparent'} barStyle={'dark-content'} translucent/>
       <View style={styles.row}>
         <Image source={images.profile} style={styles.profile} />
         <View style={{ width: '80%' }}>

@@ -25,7 +25,6 @@ row:{
 },
 con:{
     backgroundColor:'#F5F6FF',
-    // opacity: 0.5,
     height: 40,
     width: 40,
     borderRadius: 10,
@@ -43,6 +42,56 @@ box:{
     alignItems:'center',
     paddingHorizontal:20,
 },
-
+inputbox:{
+    width:'100%',
+    borderWidth:1,
+    borderColor:'#bbb',
+    borderRadius:10,
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+    marginVertical:10,
+    flex:1,
+    paddingHorizontal:10,
+    
+},
+input:{
+flex:1,
+},
+button:{
+    backgroundColor:'black',
+    justifyContent:'center',
+    alignItems:'center',
+    width:'100%',
+    height:50,
+    borderRadius:15,
+    marginBottom:20
+   
+},
+buttontext:{
+    fontSize:16,
+    color:'white'
+},
+google:{
+    height:20,
+    width:20,
+},
+row1:{
+    flexDirection:'row',
+    width:'35%',
+    alignSelf:'center',
+    alignItems:'center',
+    justifyContent:'space-between',
+    marginVertical:15
+},
+circle:{
+    backgroundColor:'white',
+    height:30,
+    width:30,
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:20,
+    elevation:2
+},
 })
 export default styles
