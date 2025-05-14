@@ -5,13 +5,7 @@ import images from '@/constants/images';
 import { FontAwesome5, Feather, FontAwesome6, Ionicons,AntDesign,MaterialCommunityIcons } from '@expo/vector-icons';
 
 const Profile = () => {
-  const iconFamilies: Record<string, any> = {
-    FontAwesome5,
-    Feather,
-    FontAwesome6,
-    Ionicons,
-    MaterialCommunityIcons
-  };
+  const iconFamilies: Record<string, any> = {FontAwesome5,Feather,FontAwesome6, Ionicons, MaterialCommunityIcons};
 
   const data = [
     { icon: 'person', text: 'Personal Data', iconFamily: 'Ionicons' },
