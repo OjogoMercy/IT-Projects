@@ -12,20 +12,18 @@ const explore = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [secureTextEntry, setSecureTextEntry] = useState(true);
+  // const [secureTextEntry, setSecureTextEntry] = useState(true);
 
   return (
     <SafeAreaView style={[styles.container,{padding:0}]} >
-      <CustomHeader title="Register new Account" Custom="Already have an Account?" text="Sign Up"/>
+      <CustomHeader title="Register new Account" Custom="Already have an Account?" text="Sign Ip"/>
       <View style={styles.form}>
-      <Input IconName="person-outline" name="Full Name" />
-      <Input IconName="mail-outline" name="Email"/>
-      <Input IconName="lock-open-outline" name="Password" isPassword={true}/>
-      <Input IconName="lock-open-outline" name="Confirm Password" isPassword={true}/>
+      <Input IconName="person-outline" name="Full Name" value={fullName} onChangeText={setFullName}/>
+      <Input IconName="mail-outline" name="Email" value={email} onChangeText={setEmail}/>
+      <Input IconName="lock-open-outline" name="Password" isPassword={true} value={password} onChangeText={setPassword}/>
+      <Input IconName="lock-open-outline" name="Confirm Password" isPassword={true} value={confirmPassword} onChangeText={setConfirmPassword}/>
       </View>
-      <Link href="/Navigation/SignIn"  asChild style={{alignItems:'center'}}>
-         <Button title="Sign Up"/>
-      </Link>
+      <Button title="Sign In" navigateTo="/Navigation/SignIn" />;
     </SafeAreaView>
   )
 }

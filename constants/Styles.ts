@@ -129,18 +129,18 @@ circle:{
         alignItems: 'center',
         backgroundColor: '#f8f9fd',
         borderRadius: 10,
-        padding: 12,
+        paddingHorizontal: 12,
         marginVertical: 10,
         shadowColor: '#000',
         shadowOpacity: 0.1,
         shadowRadius: 5,
-        elevation: 2, height:55
+        elevation: 2,height:55
       },
       imput: {
         flex: 1,
         fontSize: 16,
         paddingLeft: 10,
-        height:40
+        // height:40
       },
       icon: {
         marginRight: 10,
