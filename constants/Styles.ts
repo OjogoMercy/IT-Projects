@@ -65,7 +65,8 @@ button:{
     width:'100%',
     height:50,
     borderRadius:15,
-    marginBottom:20
+    marginBottom:20,
+    alignSelf:'center'
    
 },
 buttontext:{
@@ -93,5 +94,60 @@ circle:{
     borderRadius:20,
     elevation:2
 },
+ header: {
+    backgroundColor: '#1D4ED8',
+    paddingVertical: 50,
+    paddingHorizontal:20,
+    borderBottomLeftRadius: 25,
+    borderBottomRightRadius: 25,
+  },
+  logo: {
+    fontSize: 34,
+    fontWeight: 'bold',
+    color: '#02DBF5',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: '600',
+    color: '#fff',
+    marginTop: 15,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#ddd',
+    marginTop: 5,
+  },
+  line:{width:300,
+    height:15,
+    backgroundColor:'#2b5be3',
+    borderBottomLeftRadius:30,
+    borderBottomRightRadius:30,
+    alignSelf:'center'
+},
+    inputContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#f8f9fd',
+        borderRadius: 10,
+        padding: 12,
+        marginVertical: 10,
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowRadius: 5,
+        elevation: 2, height:55
+      },
+      imput: {
+        flex: 1,
+        fontSize: 16,
+        paddingLeft: 10,
+        height:40
+      },
+      icon: {
+        marginRight: 10,
+      },
+      form: {
+        padding: 20,
+        marginTop: 10,
+      },
 })
 export default styles

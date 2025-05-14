@@ -4,7 +4,7 @@ import React from 'react'
 const index = () => {
   return (
     <View style={styles.container}>
-      <Text style={{fontSize:30}}>Muizat you can start your design in this screen, and please do'nt change anything in the folder structure. God bless </Text>
+      <Text style={{fontSize:30}}>Muizat you can start your design in this screen, and please do not change anything in the folder structure. God bless </Text>
     </View>
   )
 }
