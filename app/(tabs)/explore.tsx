@@ -23,7 +23,7 @@ const explore = () => {
       <Input IconName="lock-open-outline" name="Password" isPassword={true}/>
       <Input IconName="lock-open-outline" name="Confirm Password" isPassword={true}/>
       </View>
-      <Link href="/Navigation/SignIn"  asChild style={{alignItems:'center'}}>
+      <Link href="/Navigation/SignIn" push asChild>
          <Button title="Sign Up"/>
       </Link>
     </SafeAreaView>
