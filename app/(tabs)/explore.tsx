@@ -8,11 +8,11 @@ import { useState } from 'react'
 import Button from '@/components/Button'
 
 const explore = () => {
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [secureTextEntry, setSecureTextEntry] = useState(true);
+  // const [fullName, setFullName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+  // const [confirmPassword, setConfirmPassword] = useState('');
+  // const [secureTextEntry, setSecureTextEntry] = useState(true);
 
   return (
     <SafeAreaView style={[styles.container,{padding:0}]} >
@@ -23,9 +23,7 @@ const explore = () => {
       <Input IconName="lock-open-outline" name="Password" isPassword={true}/>
       <Input IconName="lock-open-outline" name="Confirm Password" isPassword={true}/>
       </View>
-      <Link href="/Navigation/SignIn" push asChild>
-         <Button title="Sign Up"/>
-      </Link>
+      <Button title="Sign In" navigateTo="/Navigation/SignIn" />;
     </SafeAreaView>
   )
 }
