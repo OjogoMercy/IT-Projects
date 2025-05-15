@@ -8,13 +8,16 @@ import { useState } from 'react'
 import Button from '@/components/Button'
 
 const ForgotPassword = () => {
+  const [email, setEmail] = useState('');
   return (
-    <View>
-      <Text>ForgotPassword</Text>
+    <SafeAreaView style={[styles.container,{padding:0}]} >
+    <CustomHeader title="Forgot Password" Custom="Forgot Your pPssword Do'nt Worry"/>
+    <View style={styles.form}>
+      <Input name="Email" value={email} IconName="mail-outline" onChangeText={setEmail}/>
     </View>
+    <Button title="Recover Password"/>
+  </SafeAreaView>
   )
 }
 
 export default ForgotPassword
-
-const styles = StyleSheet.create({})
