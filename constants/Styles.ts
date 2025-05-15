@@ -65,7 +65,8 @@ button:{
     width:'100%',
     height:50,
     borderRadius:15,
-    marginBottom:20
+    marginBottom:20,
+    alignSelf:'center'
    
 },
 buttontext:{
@@ -121,7 +122,8 @@ circle:{
     backgroundColor:'#2b5be3',
     borderBottomLeftRadius:30,
     borderBottomRightRadius:30,
-    alignSelf:'center'},
+    alignSelf:'center'
+},
     inputContainer: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -132,7 +134,7 @@ circle:{
         shadowColor: '#000',
         shadowOpacity: 0.1,
         shadowRadius: 5,
-        elevation: 2,
+        elevation: 2, height:55
       },
       imput: {
         flex: 1,
