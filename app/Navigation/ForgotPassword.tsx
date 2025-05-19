@@ -11,7 +11,7 @@ const ForgotPassword = () => {
   const [email, setEmail] = useState('');
   return (
     <SafeAreaView style={[styles.container,{padding:0}]} >
-    <CustomHeader title="Forgot Password" Custom="Forgot Your pPssword Do'nt Worry"/>
+    <CustomHeader title="Forgot Password" Custom="Forgot Your Pssword Do'nt Worry"/>
     <View style={styles.form}>
       <Input name="Email" value={email} IconName="mail-outline" onChangeText={setEmail}/>
     </View>
